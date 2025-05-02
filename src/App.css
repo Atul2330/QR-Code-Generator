@@ -3,11 +3,16 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  padding: 10px;
   width: 120px;
   height: 100px;
+  animation: spin 4s linear infinite;
 }
+@keyframes spin{
+  0%{transform:rotate(0deg);}
+  100%{transform:rotate(360deg);}
+}
+
 .App-header {
   font-size: calc(10px + 2vmin);
   color: white;
